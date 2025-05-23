@@ -1,0 +1,108 @@
+
+body {
+  background: #111723;
+  color: #d2e6fa;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background: rgba(12,18,38,0.9);
+  padding: 16px 0 0 0;
+  text-align: center;
+}
+nav {
+  margin: 16px 0;
+}
+nav a {
+  color: #67d4ff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+  transition: color 0.2s;
+  letter-spacing: 1px;
+  font-size: 1.13rem;
+}
+nav a.active, nav a:hover {
+  color: #19e6e6;
+  text-shadow: 0 0 8px #00e8ff55;
+}
+.logo {
+  width: 116px;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(0 0 22px #19e6e6cc);
+}
+.animated {
+  animation: pulseLogo 2.6s infinite cubic-bezier(.4,0,.2,1);
+}
+@keyframes pulseLogo {
+  0% { transform: scale(1); filter: drop-shadow(0 0 22px #19e6e6cc); }
+  50% { transform: scale(1.11); filter: drop-shadow(0 0 54px #10caffbb); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 22px #19e6e6cc); }
+}
+main {
+  flex: 1;
+  padding: 40px 8vw 24px 8vw;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  color: #32e0ff;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+.hero {
+  font-size: 1.25rem;
+  color: #b0e9ff;
+  margin-bottom: 38px;
+}
+.cta {
+  display: inline-block;
+  margin-top: 14px;
+  background: linear-gradient(90deg,#0bf0ff,#0a9fff 85%);
+  color: #003144;
+  font-weight: bold;
+  font-size: 1.15rem;
+  padding: 14px 40px;
+  border-radius: 32px;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  box-shadow: 0 4px 32px #19e6e633;
+  transition: background 0.2s, color 0.2s;
+}
+.cta:hover {
+  background: #111c2c;
+  color: #0bf0ff;
+}
+.service-list {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  padding: 0;
+}
+.service-list li {
+  margin-bottom: 18px;
+  font-size: 1.08rem;
+  padding-left: 8px;
+}
+footer {
+  text-align: center;
+  color: #49eaff;
+  font-size: 1rem;
+  padding: 26px 0 16px 0;
+  background: rgba(15, 27, 48, 0.93);
+  border-top: 1px solid #0bf0ff33;
+  letter-spacing: 1.2px;
+  margin-top: 60px;
+}
+@media (max-width: 700px) {
+  main { padding: 30px 2vw; }
+  .logo { width: 70vw; }
+  h1 { font-size: 1.35rem; }
+  nav a { font-size: 0.95rem; margin: 0 9px; }
+}
