@@ -1,0 +1,19 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <g fill="none" stroke="url(#blue)" stroke-width="10">
+    <ellipse cx="160" cy="160" rx="100" ry="40" transform="rotate(30 160 160)" />
+    <ellipse cx="160" cy="160" rx="100" ry="40" transform="rotate(-30 160 160)" />
+    <ellipse cx="160" cy="160" rx="100" ry="40" />
+  </g>
+  <circle cx="160" cy="160" r="24" fill="url(#blue)" opacity="0.9"/>
+  <g>
+    <path d="M 160 160 Q 195 140 220 175 Q 235 205 200 205 Q 170 205 170 235 Q 170 265 200 255"
+          stroke="url(#blue)" stroke-width="9" fill="none"/>
+  </g>
+  <defs>
+    <radialGradient id="blue" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#19e6e6" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#0036ff" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+</svg>
